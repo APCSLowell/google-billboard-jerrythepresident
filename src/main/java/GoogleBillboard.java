@@ -17,13 +17,13 @@ while ((!primeFound || sum49 <= 6) && startIndex + consecutiveDigits <= e.length
                   primeFound = true;
               } 
               
-if (digitSumEquals(substring, 49)) {
-    System.out.println("Sum of digits equals 49: " + substring + " "+ sum49 +"th one");
-    sum49++;
-}
+// if (digitSumEquals(substring, 49)) {
+//    System.out.println("Sum of digits equals 49: " + substring + " "+ sum49 +"th one");
+//    sum49++;
+//}
 
-              startIndex++;
-        }
+//              startIndex++;
+//        }
 
 	}
 	
