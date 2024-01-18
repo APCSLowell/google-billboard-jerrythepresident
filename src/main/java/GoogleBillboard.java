@@ -13,7 +13,7 @@ while ((!primeFound) && startIndex + consecutiveDigits <= e.length()) {
         double parsedDouble = Double.parseDouble(substring);
         
     if (isPrime(parsedDouble)) {
-                  System.out.println("Prime: " + substring);
+                  return substring;
                   primeFound = true;
               } 
 
