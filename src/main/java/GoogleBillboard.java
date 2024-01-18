@@ -20,10 +20,7 @@ while ((!primeFound) && startIndex + consecutiveDigits <= e.length()) {
               startIndex++;
        }
 
-	}
-	
-
-public static boolean isPrime(double dNum){   
+		public static boolean isPrime(double dNum){  
   if (dNum<2){
     return false;
   }
@@ -33,7 +30,7 @@ public static boolean isPrime(double dNum){
   }
   }
   return true;
-} 
-
 }
-
+	
+	}
+	
