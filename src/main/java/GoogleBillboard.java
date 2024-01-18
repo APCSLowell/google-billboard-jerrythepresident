@@ -7,9 +7,8 @@ public class GoogleBillboard {
 	int consecutiveDigits = 10;
   int startIndex = 1;
   boolean primeFound = false;
-  int sum49 = 1;
 
-while ((!primeFound || sum49 <= 6) && startIndex + consecutiveDigits <= e.length()) {
+while ((!primeFound) && startIndex + consecutiveDigits <= e.length()) {
         String substring = e.substring(startIndex, startIndex + consecutiveDigits);
         double parsedDouble = Double.parseDouble(substring);
         
@@ -17,14 +16,9 @@ while ((!primeFound || sum49 <= 6) && startIndex + consecutiveDigits <= e.length
                   System.out.println("Prime: " + substring);
                   primeFound = true;
               } 
-              
-// if (digitSumEquals(substring, 49)) {
-//    System.out.println("Sum of digits equals 49: " + substring + " "+ sum49 +"th one");
-//    sum49++;
-//}
 
-//              startIndex++;
-//        }
+              startIndex++;
+       }
 
 	}
 	
@@ -40,14 +34,6 @@ public static boolean isPrime(double dNum){
   }
   return true;
 } 
-
-public static boolean digitSumEquals(String substring, int targetSum) {
-    int sum = 0;
-    for (int i = 0; i < substring.length(); i++) {
-        sum += Character.getNumericValue(substring.charAt(i));
-    }
-    return sum == targetSum;
-}
 
 }
 
